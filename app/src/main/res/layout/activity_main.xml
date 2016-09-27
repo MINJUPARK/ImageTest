@@ -13,7 +13,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:gravity="center">
         <Button
             android:id="@+id/but_rotate"
             android:layout_width="wrap_content"
@@ -23,7 +24,8 @@
             android:id="@+id/but_translate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/but_translate_label"/>
+            android:text="@string/but_translate_label"
+            android:onClick="transformImage"/>
         <Button
             android:id="@+id/but_scale"
             android:layout_width="wrap_content"
@@ -33,9 +35,20 @@
             android:id="@+id/but_skew"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/but_skew_label"/>
+            android:text="@string/but_skew_label"
+            android:onClick="transformImage"/>
    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:onClick="transformImage"
+        >
+    </LinearLayout>
     <com.example.imagetest.MyImage
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:onClick="transformImage"/>
+
 </LinearLayout>
